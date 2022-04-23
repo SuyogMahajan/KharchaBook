@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin ="5dp"
+        android:background="@drawable/card_stroke"
+        tools:ignore="MissingConstraints" >
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="5dp"
+               android:orientation="horizontal"
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Reason : "
+                   android:gravity="center"
+                   android:textStyle="bold"
+                   android:textColor="@color/black"
+                   android:textSize="20sp"
+                   />
+
+               <TextView
+                   android:id="@+id/reason"
+                   android:textColor="@color/black"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:text="hello"
+                   android:textSize="20sp" />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="5dp"
+               android:orientation="horizontal"
+               >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Amount : "
+                   android:gravity="center"
+                   android:textColor="@color/black"
+                   android:textStyle="bold"
+                   android:textSize="20sp"
+                   />
+               <TextView
+                   android:id="@+id/amount"
+                   android:textColor="@color/black"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="250"
+                   android:textSize="20sp"
+                   />
+
+           </LinearLayout>
+
+               <TextView
+                   android:id="@+id/time"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="2:50 Am"
+                   android:gravity="right"
+                   android:textColor="@color/black"
+                   android:textSize="15sp"
+                   android:layout_margin="10dp"
+                   />
+
+       </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

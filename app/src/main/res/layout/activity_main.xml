@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FDFDFD"
+    tools:ignore="NamespaceTypo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="7dp"
+            android:layout_marginTop="5dp"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="2.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/calendar_stroke"
+                    android:backgroundTint="@color/sky_blue"
+                    android:gravity="center"
+                    android:text="This Month"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="5dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="2.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/calendar_stroke"
+                    android:backgroundTint="@color/sky_blue"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Selected Date"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:id="@+id/ThisMonth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="2.5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0 Rs."
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+
+                    />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="5dp"
+                    android:background="@color/black" />
+
+                <TextView
+
+                    android:id="@+id/Today"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="2.5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0 Rs."
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/black" />
+
+        <CalendarView
+
+            android:id="@+id/calendarView"
+            style="@android:style/Widget.DeviceDefault.CalendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="7dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/calendar_stroke"
+            android:backgroundTint="#C3CFFD"
+            android:dateTextAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:soundEffectsEnabled="true"
+
+            />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:orientation="horizontal">
+
+            <Button
+
+                android:id="@+id/PendingLends"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:layout_weight="3"
+                android:backgroundTint="@color/blue"
+                android:text="Add Pending Lends"
+                android:textColor="@color/white"
+
+                />
+
+            <Button
+
+                android:id="@+id/Add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/blue"
+                android:text="ADD"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@color/black" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="#C3CFFD"
+            android:paddingTop="15dp"
+            tools:listitem="@layout/lend_item"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
