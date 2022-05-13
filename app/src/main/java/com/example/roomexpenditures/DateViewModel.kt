@@ -41,4 +41,8 @@ class DateViewModel(application:Application):AndroidViewModel(application) {
         return  repo.isPresent(date,d2)
     }
 
+    fun deleteData(dateData: dateData)= viewModelScope.launch (Dispatchers.IO){
+        repo.deleteData(dateData)
+    }
+
 }

@@ -7,13 +7,12 @@
     android:background="@drawable/splash_background"
     >
 
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/inter_extrabold"
-        android:text="HostelKhata"
+        android:text="Kharcha likho"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -29,15 +28,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/inter_extrabold"
-        android:text="for Daily Expenditures !!!"
+        android:text="For Expense Management !!!"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintHorizontal_bias="0.891"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.753" />
-
+        app:layout_constraintVertical_bias="0.737" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

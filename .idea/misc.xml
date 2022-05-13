@@ -22,14 +22,25 @@
         <entry key="..\:/Users/Dell/AndroidStudioProjects/RoomExpenditures/app/src/main/res/layout/item.xml" value="0.2" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/RoomExpenditures/app/src/main/res/layout/lend_item.xml" value="0.264" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/RoomExpenditures/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.121" />
+        <entry key="..\:/Users/Dell/Desktop/AndroidStudioProjects/RoomExpenditures/app/src/main/res/drawable/button_shape.xml" value="0.1805" />
+        <entry key="..\:/Users/Dell/Desktop/AndroidStudioProjects/RoomExpenditures/app/src/main/res/drawable/card_stroke.xml" value="0.1805" />
+        <entry key="..\:/Users/Dell/Desktop/AndroidStudioProjects/RoomExpenditures/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/Dell/Desktop/AndroidStudioProjects/RoomExpenditures/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
+        <entry key="..\:/Users/Dell/Desktop/AndroidStudioProjects/RoomExpenditures/app/src/main/res/layout/fragment_blank.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/Dell/Desktop/AndroidStudioProjects/RoomExpenditures/app/src/main/res/layout/item.xml" value="0.25" />
+        <entry key="..\:/Users/Dell/Desktop/AndroidStudioProjects/RoomExpenditures/app/src/main/res/layout/lend_item.xml" value="0.264" />
+        <entry key="..\:/Users/Dell/Desktop/AndroidStudioProjects/RoomExpenditures/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.181" />
         <entry key="..\:/desktop2/AndroidStudioProjects/RoomExpenditures/app/src/main/res/drawable/button_shape.xml" value="0.1525" />
         <entry key="..\:/desktop2/AndroidStudioProjects/RoomExpenditures/app/src/main/res/drawable/calendar_stroke.xml" value="0.1525" />
         <entry key="..\:/desktop2/AndroidStudioProjects/RoomExpenditures/app/src/main/res/drawable/card_stroke.xml" value="0.1525" />
+        <entry key="..\:/desktop2/AndroidStudioProjects/RoomExpenditures/app/src/main/res/drawable/ic_call.xml" value="0.1525" />
+        <entry key="..\:/desktop2/AndroidStudioProjects/RoomExpenditures/app/src/main/res/drawable/ic_delete.xml" value="0.1525" />
         <entry key="..\:/desktop2/AndroidStudioProjects/RoomExpenditures/app/src/main/res/layout/activity_each_day.xml" value="0.25" />
-        <entry key="..\:/desktop2/AndroidStudioProjects/RoomExpenditures/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/desktop2/AndroidStudioProjects/RoomExpenditures/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/desktop2/AndroidStudioProjects/RoomExpenditures/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
         <entry key="..\:/desktop2/AndroidStudioProjects/RoomExpenditures/app/src/main/res/layout/fragment_blank.xml" value="0.25" />
         <entry key="..\:/desktop2/AndroidStudioProjects/RoomExpenditures/app/src/main/res/layout/item.xml" value="0.25" />
-        <entry key="..\:/desktop2/AndroidStudioProjects/RoomExpenditures/app/src/main/res/layout/lend_item.xml" value="0.25" />
+        <entry key="..\:/desktop2/AndroidStudioProjects/RoomExpenditures/app/src/main/res/layout/lend_item.xml" value="0.264" />
       </map>
     </option>
   </component>

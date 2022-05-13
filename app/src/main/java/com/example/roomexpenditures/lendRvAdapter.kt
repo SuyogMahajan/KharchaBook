@@ -31,15 +31,21 @@ class lendRvAdapter(val context: Context): RecyclerView.Adapter<lendRvAdapter.ge
     inner class getViewHold(val binding:LendItemBinding,val onButtonClick: onButtonClick):RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): getViewHold {
-         return getViewHold(LendItemBinding.inflate(LayoutInflater.from(context)),onButtonClick1)
+         return getViewHold(LendItemBinding.inflate(LayoutInflater.from(parent.context),parent,false),onButtonClick1)
     }
 
     override fun onBindViewHolder(holder: getViewHold, position: Int) {
 
         holder.binding.name.text = list[position].name
-        holder.binding.mobileNo.text = list[position].number.toString()
+
+        if(list[position].number != 0L)
+          holder.binding.mobileNo.text = list[position].number.toString()
+
         holder.binding.type.text = list[position].type
-        holder.binding.lend.text = list[position].amount.toString()
+
+        val t = "Rs." + list[position].amount.toString()
+
+        holder.binding.lend.text = t
 
         holder.binding.call.setOnClickListener {
             holder.onButtonClick.onCallClick(position)

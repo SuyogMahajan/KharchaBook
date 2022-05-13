@@ -80,7 +80,7 @@
                                               <map>
                                                 <entry key="color" value="000000" />
                                                 <entry key="imagePath" value="C:\Users\Dell\Downloads\money-bag.png" />
-                                                <entry key="scalingPercent" value="42" />
+                                                <entry key="scalingPercent" value="35" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -113,7 +113,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="000000" />
+                                      <entry key="backgroundColor" value="0088ff" />
                                     </map>
                                   </option>
                                 </PersistentState>

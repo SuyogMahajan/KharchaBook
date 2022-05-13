@@ -24,4 +24,8 @@ class DateRepository(val dDao: dataDao) {
         return dDao.getThisMonthSum(d1,d2)
     }
 
+    suspend fun deleteData(dateData: dateData){
+        dDao.deleteData(dateData)
+    }
+
 }

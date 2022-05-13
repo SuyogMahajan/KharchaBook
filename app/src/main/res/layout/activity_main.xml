@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity"
     android:background="#FDFDFD"
     tools:ignore="NamespaceTypo">
@@ -35,7 +36,7 @@
                     android:background="@drawable/calendar_stroke"
                     android:backgroundTint="@color/sky_blue"
                     android:gravity="center"
-                    android:text="This Month"
+                    android:text="Selected Month"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -113,18 +114,13 @@
         <CalendarView
 
             android:id="@+id/calendarView"
-            style="@android:style/Widget.DeviceDefault.CalendarView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="7dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="5dp"
-            android:background="@drawable/calendar_stroke"
-            android:backgroundTint="#C3CFFD"
             android:dateTextAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:soundEffectsEnabled="true"
-
-            />
+            android:soundEffectsEnabled="true" />
 
         <LinearLayout
 
@@ -139,9 +135,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="2.5dp"
-                android:layout_weight="3"
+                android:layout_weight="2"
                 android:backgroundTint="@color/blue"
-                android:text="Add Pending Lends"
+                android:text="Add Pending Transaction"
                 android:textColor="@color/white"
 
                 />
@@ -154,30 +150,31 @@
                 android:layout_margin="2.5dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/blue"
-                android:text="ADD"
-                android:textColor="@color/white" />
+                android:text="ADD Note"
+                android:textColor="@color/white"
+                />
 
         </LinearLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginHorizontal="15dp"
-            android:background="@color/black" />
-
-
-        <androidx.recyclerview.widget.RecyclerView
-
-            android:id="@+id/rv"
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/button_shape"
-            android:backgroundTint="#C3CFFD"
-            android:paddingTop="15dp"
-            tools:listitem="@layout/lend_item"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#F4F4F4"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="2dp">
 
-            />
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#F4F4F4"
+                android:paddingTop="15dp"
+                tools:listitem="@layout/lend_item" />
+
+        </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 

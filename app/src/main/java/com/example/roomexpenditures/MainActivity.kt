@@ -4,6 +4,8 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toolbar
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -122,7 +124,7 @@ class MainActivity : AppCompatActivity() {
             var t = viewModel.isPresent(date,date)
 
             if (t) {
-                val s = viewModel.getSum(date).toString() +" Rs."
+                val s = " Rs." + viewModel.getSum(date).toString()
                 bindingMain.Today.text = s
             } else {
                 bindingMain.Today.text = "0 Rs."
@@ -136,7 +138,7 @@ class MainActivity : AppCompatActivity() {
             var t = viewModel.isPresent(d1,d2)
 
             if (t) {
-                val s = viewModel.getThisMonthSum(d1,d2).toString() +" Rs."
+                val s = " Rs." + viewModel.getThisMonthSum(d1,d2).toString()
                 bindingMain.ThisMonth.text = s
             } else {
                 bindingMain.ThisMonth.text = "0 Rs."

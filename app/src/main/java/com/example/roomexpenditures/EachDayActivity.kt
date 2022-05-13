@@ -33,7 +33,7 @@ class EachDayActivity: AppCompatActivity() {
 
         binding.rv.layoutManager = LinearLayoutManager(this)
 
-        val rvAdapter = RvAdapter(this)
+        val rvAdapter = RvAdapter(this,viewModel)
         binding.rv.adapter = rvAdapter
 
         viewModel.getData(date).observe(this, Observer{
@@ -46,7 +46,16 @@ class EachDayActivity: AppCompatActivity() {
             saveData(date)
         }
 
+        rvAdapter.setOnDeleteClicked(object:RvAdapter.onDeleteClicked{
+            override fun onClickDelete(position: Int) {
+                viewModel.deleteData(rvAdapter.RvList[position])
+            }
+
+
+        })
+
     }
+
 
 
     private fun getDefaultDate(): Date {
@@ -63,11 +72,22 @@ class EachDayActivity: AppCompatActivity() {
 
             val reason = binding.reasonInput.text.toString()
             val amount = binding.amountInput.text.toString()
+            val time  = calTime();
 
-            viewModel.insert(dateData(date,reason,amount.toLong()))
+            viewModel.insert(dateData(date,reason,amount.toLong(),time))
 
             binding.reasonInput.text.clear()
             binding.amountInput.text.clear()
         }
+    }
+
+    private fun calTime(): String {
+        val time = System.currentTimeMillis();
+        return formatedTime(time);
+    }
+
+    private fun formatedTime(t:Long):String{
+        val sdf = SimpleDateFormat("h:mm a")
+        return sdf.format(Date(t)).toString()
     }
 }
